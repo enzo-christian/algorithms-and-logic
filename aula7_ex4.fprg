@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-04 08:07:32 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTg7MjAyNS0wNC0wNDsiMDY6NTY6MjIgIjsyMTA3"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTg7MjAyNS0wNC0wNDsiMDg6MDc6MzIgIjs0OzIyMTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;1+2-3*4/5.0? &quot;&amp;1+2-3*4/5.0" newline="True"/>
+            <output expression="&quot;1+2-3*4/5.0&gt;2? &quot;&amp;(0.6&gt;2)" newline="True"/>
+            <output expression="&quot;1+2-3*4/5.0&gt;2?== Verdadeiro? &quot;&amp;(0.6&gt;2)" newline="True"/>
+            <output expression="&quot;2&lt;1+2-3*4/5.0 == Verdadeiro &quot; &amp;(2&lt;1+2-3*4/5.0)" newline="True"/>
+            <output expression="&quot;2&lt;1+2-3*4/5.0 == Verdadeiro||2+10/2.0&gt;5? &quot; &amp;(2&lt;1+2-3*4/5.0 == true||2+10/2.0&gt;5)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
