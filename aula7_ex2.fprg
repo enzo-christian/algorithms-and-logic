@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-04 07:34:16 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTg7MjAyNS0wNC0wNDsiMDY6NTY6MjIgIjsyMTA3"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTg7MjAyNS0wNC0wNDsiMDc6MzQ6MTYgIjsyOzIyMTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="resultado" type="Boolean" array="False" size=""/>
+            <declare name="frequencia" type="Integer" array="False" size=""/>
+            <declare name="nota" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual sua frequ&#234;ncia?&quot;" newline="True"/>
+            <input variable="frequencia"/>
+            <output expression="&quot;Qual sua nota?&quot;" newline="True"/>
+            <input variable="nota"/>
+            <assign variable="resultado" expression="nota&gt;=6&amp;&amp;frequencia&gt;=75"/>
+            <output expression="&quot;Aprovado? &quot; &amp;resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
