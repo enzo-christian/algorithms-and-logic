@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-04 09:24:35 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTg7MjAyNS0wNC0wNDsiMDY6NTY6MjIgIjsyMTA3"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTg7MjAyNS0wNC0wNDsiMDk6MjQ6MzUgIjsxMDsyMjY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1" type="Real" array="False" size=""/>
+            <declare name="caldeira" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Digite a temperatura atual: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;A caldeira est&#225; ligada? &quot;" newline="True"/>
+            <input variable="caldeira"/>
+            <output expression="&quot;Caldeira ativa?: &quot;&amp;(caldeira=true||caldeira=false)" newline="True"/>
+            <output expression="&quot;Sirene ligada (PERIGO)? &quot;&amp;(caldeira=true&amp;&amp;n1&lt;=30||n1&gt;=100)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
