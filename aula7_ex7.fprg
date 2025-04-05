@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-04 09:30:02 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTg7MjAyNS0wNC0wNDsiMDY6NTY6MjIgIjsyMTA3"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTg7MjAyNS0wNC0wNDsiMDk6MzA6MDIgIjsxMTsyMjU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p1, p2, p3" type="String" array="False" size=""/>
+            <output expression="&quot;Come&#231;a com a letra B e termina com a letra A&quot;" newline="True"/>
+            <output expression="&quot;Quais s&#227;o seus tr&#234;s palpites?&quot;" newline="True"/>
+            <input variable="p1"/>
+            <input variable="p2"/>
+            <input variable="p3"/>
+            <output expression="&quot;Acertou? &quot; &amp;(p1=&quot;banana&quot;||p2=&quot;banana&quot;||p3=&quot;banana&quot;)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
