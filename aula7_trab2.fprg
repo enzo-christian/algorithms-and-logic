@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-04 09:35:13 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTg7MjAyNS0wNC0wNDsiMDY6NTY6MjIgIjsyMTA3"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTg7MjAyNS0wNC0wNDsiMDk6MzU6MTIgIjsxMTsyMjYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="em, ingles" type="Boolean" array="False" size=""/>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Concluiu o ensino m&#233;dio? &quot;" newline="True"/>
+            <input variable="em"/>
+            <output expression="&quot;Fez curso de ingl&#234;s? &quot;" newline="True"/>
+            <input variable="ingles"/>
+            <output expression="&quot;Idade? &quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;Qualificado para a vaga? &quot; &amp;(em=true&amp;&amp;ingles=true&amp;&amp;idade&gt;=18)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
