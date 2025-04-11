@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-11 08:27:31 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMDY7MjAyNS0wNC0xMTsiMDc6MTU6MzUgIjsyMTAy"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMDY7MjAyNS0wNC0xMTsiMDg6Mjc6MzEgIjs5OzIyMTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s1, s2, s3, disponivel" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor do seu primeiro saque: &quot;" newline="True"/>
+            <input variable="s1"/>
+            <assign variable="disponivel" expression="s1"/>
+            <output expression="&quot;Saldo dispon&#237;vel: &quot; &amp;disponivel" newline="True"/>
+            <output expression="&quot;Digite o valor do seu segundo saque: &quot;" newline="True"/>
+            <input variable="s2"/>
+            <assign variable="disponivel" expression="disponivel-s2"/>
+            <output expression="&quot;Saldo dispon&#237;vel: &quot; &amp;disponivel" newline="True"/>
+            <output expression="&quot;Digite o valor do terceiro saque: &quot;" newline="True"/>
+            <input variable="s3"/>
+            <assign variable="disponivel" expression="disponivel-s3"/>
+            <output expression="&quot;Saldo dispon&#237;vel &#233;: &quot; &amp;disponivel" newline="True"/>
+            <if expression="disponivel &lt;= 0">
+                <then>
+                    <output expression="&quot;Saldo NEGATIVO&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Saldo POSITIVO&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

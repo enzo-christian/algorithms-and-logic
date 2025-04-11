@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-11 08:13:23 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMDY7MjAyNS0wNC0xMTsiMDc6MTU6MzUgIjsyMTAy"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMDY7MjAyNS0wNC0xMTsiMDg6MTM6MjMgIjs4OzIyMTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero inteiro: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <if expression="n1 % 2 == 0">
+                <then>
+                    <output expression="&quot;Seu n&#250;mero &#233; PAR!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Seu n&#250;mero &#233; IMPAR!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

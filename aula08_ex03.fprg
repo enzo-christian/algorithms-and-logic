@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-11 07:40:47 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMDY7MjAyNS0wNC0xMTsiMDc6MTU6MzUgIjsyMTAy"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMDY7MjAyNS0wNC0xMTsiMDc6NDA6NDcgIjszOzIyMTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="media, frequencia" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite sua m&#233;dia: &quot;" newline="True"/>
+            <input variable="media"/>
+            <output expression="&quot;Digite sua frequ&#234;ncia: &quot;" newline="True"/>
+            <input variable="frequencia"/>
+            <if expression="media &gt;= 6 and frequencia &gt;= 75">
+                <then>
+                    <output expression="&quot;Aprovado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="media &lt; 6">
+                        <then>
+                            <output expression="&quot;Reprovado por nota&quot;" newline="True"/>
+                            <if expression="frequencia &lt; 75">
+                                <then>
+                                    <output expression="&quot;e por frequ&#234;ncia&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Reprovado por frequ&#234;ncia&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

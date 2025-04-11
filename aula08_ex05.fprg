@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-11 07:54:23 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMDY7MjAyNS0wNC0xMTsiMDc6MTU6MzUgIjsyMTAy"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMDY7MjAyNS0wNC0xMTsiMDc6NTQ6MjMgIjs1OzIyMTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2" type="Real" array="False" size=""/>
+            <declare name="operador" type="String" array="False" size=""/>
+            <output expression="&quot;Escolhe a opera&#231;&#227;o: SOMA, MULTIPLICA&#199;&#195;O, DIVIS&#195;O ou SUBTRA&#199;&#195;O&quot;" newline="True"/>
+            <input variable="operador"/>
+            <output expression="&quot;Digite o primeiro valor: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite o segundo valor: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <if expression="operador = &quot;SOMA&quot;">
+                <then>
+                    <output expression="&quot;O total da soma &#233;: &quot; &amp;n1+n2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="operador = &quot;MULTIPLICA&#199;&#195;O&quot;">
+                        <then>
+                            <output expression="&quot;O valor da multiplica&#231;&#227;o &#233;: &quot; &amp;n1*n2" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="operador = &quot;DIVIS&#195;O&quot;">
+                                <then>
+                                    <output expression="&quot;O valor da divis&#227;o &#233;: &quot; &amp;n1/n2" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="operador = &quot;SUBTRA&#199;&#195;O&quot;">
+                                        <then>
+                                            <output expression="&quot;O valor da subtra&#231;&#227;o &#233;: &quot; &amp;n1-n2||n2-n1" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
