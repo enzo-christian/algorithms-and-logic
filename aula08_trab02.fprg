@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-11 08:56:59 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMDY7MjAyNS0wNC0xMTsiMDc6MTU6MzUgIjsyMTAy"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMDY7MjAyNS0wNC0xMTsiMDg6NTY6NTkgIjsxMTsyMjcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="login, senha" type="String" array="False" size=""/>
+            <declare name="relatorio" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite seu usu&#225;rio: &quot;" newline="True"/>
+            <input variable="login"/>
+            <output expression="&quot;Digite sua senha: &quot;" newline="True"/>
+            <input variable="senha"/>
+            <if expression="senha = &quot;admin&quot;">
+                <then>
+                    <output expression="&quot;Administrador: permiss&#227;o TOTAL&quot;" newline="True"/>
+                    <output expression="&quot;Digite 1 para relat&#243;rios, 2 para cadastros, 3 para financeiro ou S para Sair&quot;" newline="True"/>
+                    <input variable="relatorio"/>
+                    <if expression="relatorio = 1">
+                        <then>
+                            <output expression="&quot;Acesso Permitido&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="relatorio = 2">
+                                <then>
+                                    <output expression="&quot;Acesso Permitido&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="relatorio = 3">
+                                        <then>
+                                            <output expression="&quot;Acesso Permitido&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="relatorio = &quot;S&quot;">
+                                                <then>
+                                                    <output expression="&quot;Obrigado por utilizar o sistema&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="relatorio &lt;= 0 || relatorio &gt;= 4">
+                                                        <then>
+                                                            <output expression="&quot;C&#243;digo inv&#225;lido&quot;" newline="True"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="senha = &quot;user&quot;">
+                        <then>
+                            <output expression="&quot;Usu&#225;rio comum: poucas permiss&#245;es&quot;" newline="True"/>
+                            <output expression="&quot;Digite 1 para relat&#243;rios, 2 para cadastros, 3 para financeiro ou S para Sair&quot;" newline="True"/>
+                            <input variable="relatorio"/>
+                            <if expression="relatorio = 1">
+                                <then>
+                                    <output expression="&quot;Acesso Permitido&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="relatorio = 2">
+                                        <then>
+                                            <output expression="&quot;Acesso Permitido&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="relatorio = 3">
+                                                <then>
+                                                    <output expression="&quot;Acesso Negado&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="relatorio = &quot;S&quot;">
+                                                        <then>
+                                                            <output expression="&quot;Obrigado por utilizar o sistema&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="relatorio &lt;= 0 || relatorio &gt;= 4">
+                                                                <then>
+                                                                    <output expression="&quot;C&#243;digo inv&#225;lido&quot;" newline="True"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="senha = &quot;guest&quot;">
+                                <then>
+                                    <output expression="&quot;Usu&#225;rio visitante: poucas permiss&#245;es&quot;" newline="True"/>
+                                    <output expression="&quot;Digite 1 para relat&#243;rios, 2 para cadastros, 3 para financeiro ou S para Sair&quot;" newline="True"/>
+                                    <input variable="relatorio"/>
+                                    <if expression="relatorio = 1">
+                                        <then>
+                                            <output expression="&quot;Acesso Permitido&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="relatorio = 2">
+                                                <then>
+                                                    <output expression="&quot;Acesso Negado&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="relatorio = 3">
+                                                        <then>
+                                                            <output expression="&quot;Acesso Negado&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="relatorio = &quot;S&quot;">
+                                                                <then>
+                                                                    <output expression="&quot;Obrigado por utilizar o sistema&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="relatorio &lt;= 0 || relatorio &gt;= 4">
+                                                                        <then>
+                                                                            <output expression="&quot;C&#243;digo inv&#225;lido&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else/>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="senha = &quot;contador&quot;">
+                                        <then>
+                                            <output expression="&quot;Contador: Permiss&#227;o para utilizar o financeiro&quot;" newline="True"/>
+                                            <output expression="&quot;Digite 1 para relat&#243;rios, 2 para cadastros, 3 para financeiro ou S para Sair&quot;" newline="True"/>
+                                            <input variable="relatorio"/>
+                                            <if expression="relatorio = 1">
+                                                <then>
+                                                    <output expression="&quot;Acesso Negado&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="relatorio = 2">
+                                                        <then>
+                                                            <output expression="&quot;Acesso Negado&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="relatorio = 3">
+                                                                <then>
+                                                                    <output expression="&quot;Acesso Permitido&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="relatorio = &quot;S&quot;">
+                                                                        <then>
+                                                                            <output expression="&quot;Obrigado por utilizar o sistema&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="relatorio &lt;= 0 || relatorio &gt;= 4">
+                                                                                <then>
+                                                                                    <output expression="&quot;C&#243;digo inv&#225;lido&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else/>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
