@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="aula09_ex01"/>
+        <attribute name="authors" value="lorentz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-09 05:07:05 PM"/>
+        <attribute name="created" value="bG9yZW50ejtERVNLVE9QLTJJSkIxTVU7MjAyNS0wNS0wOTswMzo1MDozOSBQTTszMTI2"/>
+        <attribute name="edited" value="bG9yZW50ejtERVNLVE9QLTJJSkIxTVU7MjAyNS0wNS0wOTswNTowNzowNSBQTTsxMTszMjgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, resultado" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite a tabuada desejada: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <assign variable="n2" expression="0"/>
+            <assign variable="resultado" expression="0"/>
+            <while expression="n2 &lt;= 10">
+                <output expression="n1&amp;&quot;x&quot;&amp;n2&amp;&quot;=&quot;&amp;resultado" newline="True"/>
+                <assign variable="n2" expression="n2 + 1"/>
+                <assign variable="resultado" expression="n1 * n2"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

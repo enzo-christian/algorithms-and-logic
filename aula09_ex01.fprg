@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="aula09_ex01"/>
+        <attribute name="authors" value="lorentz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-09 04:27:53 PM"/>
+        <attribute name="created" value="bG9yZW50ejtERVNLVE9QLTJJSkIxTVU7MjAyNS0wNS0wOTswMzo1MDozOSBQTTszMTI2"/>
+        <attribute name="edited" value="bG9yZW50ejtERVNLVE9QLTJJSkIxTVU7MjAyNS0wNS0wOTswNDoyNzo1MyBQTTsyOzMyMzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cont" type="Integer" array="False" size=""/>
+            <assign variable="cont" expression="0"/>
+            <while expression="cont &lt; 10">
+                <output expression="&quot;Contagem: &quot; &amp;cont" newline="True"/>
+                <assign variable="cont" expression="cont + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="aula09_ex01"/>
+        <attribute name="authors" value="lorentz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-09 05:02:09 PM"/>
+        <attribute name="created" value="bG9yZW50ejtERVNLVE9QLTJJSkIxTVU7MjAyNS0wNS0wOTswMzo1MDozOSBQTTszMTI2"/>
+        <attribute name="edited" value="bG9yZW50ejtERVNLVE9QLTJJSkIxTVU7MjAyNS0wNS0wOTswNTowMjowOSBQTTsxMDszMjc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="media, frequencia" type="Integer" array="False" size=""/>
+            <declare name="resposta" type="String" array="False" size=""/>
+            <assign variable="resposta" expression="&quot;s&quot;"/>
+            <while expression="resposta == &quot;s&quot;">
+                <output expression="&quot;Digite sua m&#233;dia: &quot;" newline="True"/>
+                <input variable="media"/>
+                <output expression="&quot;Digite sua frequ&#234;ncia: &quot;" newline="True"/>
+                <input variable="frequencia"/>
+                <if expression="media &gt;= 6 &amp;&amp; frequencia &gt;= 75">
+                    <then>
+                        <output expression="&quot;Aprovado!&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Reprovado!&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Deseja fazer uma nova consulta (s/n)?: &quot;" newline="True"/>
+                <input variable="resposta"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

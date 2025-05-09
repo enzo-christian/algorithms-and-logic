@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="aula09_ex01"/>
+        <attribute name="authors" value="lorentz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-09 05:13:52 PM"/>
+        <attribute name="created" value="bG9yZW50ejtERVNLVE9QLTJJSkIxTVU7MjAyNS0wNS0wOTswMzo1MDozOSBQTTszMTI2"/>
+        <attribute name="edited" value="bG9yZW50ejtERVNLVE9QLTJJSkIxTVU7MjAyNS0wNS0wOTswNToxMzo1MiBQTTsxNDszMjgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="saque, inicial" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor do saldo inicial: &quot;" newline="True"/>
+            <input variable="inicial"/>
+            <assign variable="saque" expression="1"/>
+            <while expression="saque &gt; 0">
+                <output expression="&quot;Digite o valor do saque (0 para finalizar): &quot;" newline="True"/>
+                <input variable="saque"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

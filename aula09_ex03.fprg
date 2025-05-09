@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="aula09_ex01"/>
+        <attribute name="authors" value="lorentz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-09 04:36:54 PM"/>
+        <attribute name="created" value="bG9yZW50ejtERVNLVE9QLTJJSkIxTVU7MjAyNS0wNS0wOTswMzo1MDozOSBQTTszMTI2"/>
+        <attribute name="edited" value="bG9yZW50ejtERVNLVE9QLTJJSkIxTVU7MjAyNS0wNS0wOTswNDozNjo1NCBQTTs0OzMyMzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="coluna, linha" type="Integer" array="False" size=""/>
+            <assign variable="coluna" expression="0"/>
+            <while expression="coluna &lt; 3">
+                <assign variable="linha" expression="0"/>
+                <while expression="coluna &lt; 3 &amp;&amp; linha &lt; 5">
+                    <output expression="&quot;Coluna: &quot;&amp;coluna&amp;&quot; &quot;&amp;&quot;Linha: &quot;&amp;linha" newline="True"/>
+                    <assign variable="linha" expression="linha + 1"/>
+                </while>
+                <assign variable="coluna" expression="coluna + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
